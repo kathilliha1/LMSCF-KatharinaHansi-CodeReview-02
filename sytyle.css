@@ -1,0 +1,98 @@
+@import url(https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap);
+html, body, img, ul, p {
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px; }
+
+body {
+  font-family: "ZCOOL QingKe HuangYou"; }
+
+.headercontainer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: space-around;
+  background: #5c191b;
+  align-items: center; }
+
+#navheader {
+  display: flex;
+  background: #1a1a1a;
+  width: 100%;
+  height: 40px;
+  align-items: center; }
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 5px; }
+nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding-left: 10px; }
+
+#date {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px; }
+
+.mainheadings {
+  display: flex;
+  background: #dadada;
+  margin: 5px 0; }
+
+.container {
+  display: flex; }
+
+.smallpic {
+  display: flex;
+  height: 200px;
+  width: 100%; }
+
+.imgsize {
+  width: 100%; }
+
+.textsmall {
+  display: flex;
+  background: #1a1a1a;
+  color: white;
+  width: 25%;
+  position: absolute;
+  top: 50px; }
+
+.mainheadings {
+  display: flex;
+  padding: 10px; }
+
+#banner2 {
+  display: flex; }
+
+#container3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+#footer {
+  width: 100%;
+  background: #1a1a1a;
+  height: 150px; }
+
+#footerlogo {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px; }
+
+#footertext {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white; }
+
+/*# sourceMappingURL=sytyle.css.map */

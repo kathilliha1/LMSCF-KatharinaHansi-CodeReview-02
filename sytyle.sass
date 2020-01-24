@@ -1,0 +1,134 @@
+@import "reset"  
+@import url(https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap) //google font 
+
+
+
+body 
+	font-family: "ZCOOL QingKe HuangYou"
+
+// --------------------
+// variables
+// --------------------
+$backgroundnav: rgb(26,26,26)
+$backgroundmain: rgb(218,218,218)
+$colortext: white
+
+
+// --------------------
+// header start
+// --------------------
+.headercontainer
+	display: flex
+	width: 100%
+	height: 100px
+	justify-content: space-around //aligns flex items along the main axis
+	background: rgb(92,25,27)
+	align-items: center  //centers items vertically
+
+
+#navheader
+	display: flex
+	background: $backgroundnav 
+	width: 100%
+	height: 40px
+	align-items: center			//get text vertically centered
+
+nav 
+	li
+		list-style-type: none   //remove the bulletpoints
+		display: inline-block   //to get list items next to each other
+		padding: 0 5px		// space around each item
+
+	a 
+		text-decoration: none //removes line under links
+		font-size: 18px
+		color: $colortext
+		padding-left: 10px
+
+// --------------------
+// main start
+// --------------------
+#date
+	display: flex
+	justify-content: flex-end  //gets text on the left side of the page
+	padding: 10px
+
+.mainheadings
+	display: flex
+	background: $backgroundmain
+	margin: 5px 0
+
+// --------------------
+// container - first & second line small pictures
+// --------------------
+
+.container
+	display: flex
+	
+
+
+.smallpic
+	display: flex
+	height: 200px
+	width: 100%	
+	
+
+.imgsize
+	width: 100%
+	
+
+.textsmall
+	display: flex
+	background: $backgroundnav
+	color: $colortext
+	width: 25%
+	position: absolute     //the element is positioned absolutely to its first positioned parent (#container1) text appears to be placed over the image
+	top: 50px
+  
+.mainheadings
+	display: flex
+	padding: 10px
+
+
+
+// --------------------
+//banner 2 - FSWD
+// --------------------
+
+#banner2
+	display: flex
+
+#container3
+	display: flex
+	justify-content: center
+	margin-top: 10px
+	margin-bottom: 10px
+
+// --------------------
+//Footer
+// --------------------
+#footer
+	width: 100%
+	background: $backgroundnav
+	height: 150px
+
+#footerlogo
+	display: flex
+	justify-content: flex-end
+
+	padding-right: 20px
+
+
+#footertext
+	display: flex
+	justify-content: center
+	align-items: flex-end
+	color: $colortext
+
+
+
+
+
+
+
+
