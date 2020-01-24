@@ -1,10 +1,19 @@
 @import "reset"  
 @import url(https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap) //google font 
 
+@media only screen and (max-width: 1280px) and (min-width:769px)
+	body
+		width: 100%
+		height: 200px
 
+@media only screen and (max-width: 768px) and (min-width:320px)
+	#wrapper
+		width: 100%
+		height: 200px
 
 body 
 	font-family: "ZCOOL QingKe HuangYou"
+	width: 100%
 
 // --------------------
 // variables
@@ -43,7 +52,10 @@ nav
 		text-decoration: none //removes line under links
 		font-size: 18px
 		color: $colortext
-		padding-left: 10px
+		padding: 10px		//centers link
+
+	a:hover
+		background: #6c756e		//changes color of link when you move mouse over it
 
 // --------------------
 // main start
@@ -53,10 +65,20 @@ nav
 	justify-content: flex-end  //gets text on the left side of the page
 	padding: 10px
 
-.mainheadings
+#mainheadingtop
 	display: flex
 	background: $backgroundmain
 	margin: 5px 0
+	font-size: 20px
+
+
+#mainheadingpop
+	display: flex
+	background: $backgroundmain
+	margin-right: 170px 		//makes grey line shorter on right side
+	margin-top: 10px
+	margin-bottom: 10px
+	font-size: 20px
 
 // --------------------
 // container - first & second line small pictures
@@ -64,67 +86,119 @@ nav
 
 .container
 	display: flex
-	
-
-
-.smallpic
-	display: flex
-	height: 200px
 	width: 100%	
-	
 
-.imgsize
-	width: 100%
-	
+.smallimg 
+	justify-content: flex-start		
+	display: flex   //brings images next to each other and puts space-between them	
 
-.textsmall
-	display: flex
-	background: $backgroundnav
-	color: $colortext
+.containerText  
+	position: relative   //positions container in a relative position
+	text-align: left   
+	color: white
 	width: 25%
-	position: absolute     //the element is positioned absolutely to its first positioned parent (#container1) text appears to be placed over the image
-	top: 50px
-  
-.mainheadings
-	display: flex
+	height: 200px
+	margin-right: 65px
+
+.imgtext
+	position: absolute   //brings text over images
+	bottom: 0px
+	background: $backgroundnav 
+	font-size: 100%
+	padding-top: 5px
+	padding-bottom: 5px
+
+.imgtextsnowden
+	position: absolute
+	bottom: 0px
+	background: $backgroundnav 
+	font-size: 100%
+	padding: 10px		//aligns textfield with image
+
+.imgtext1
+	position: absolute
+	bottom: 0px
+	background: $backgroundnav 
+	font-size: 100%
 	padding: 10px
-
-
+	padding-left: 32px     //aligns textfield with image
 
 // --------------------
-//banner 2 - FSWD
+// banners
 // --------------------
 
 #banner2
-	display: flex
+	position: absolute  //gets banner to the right
+	float: right
 
-#container3
-	display: flex
-	justify-content: center
-	margin-top: 10px
-	margin-bottom: 10px
+#bannerFSWD
+	height: 440px
+	width: 105px
+
+#banner3
+	align-items: center
+	width: 70%
+	margin-top: 20px
+	margin-bottom: 20px
+
+#bannerCF
+	height: 540px
+
+// --------------------
+// container - big pictures
+// --------------------
+
+#big
+	column-count: 3			//creates 3 columns
+	display: inline-block
+
+	
+.containerText1
+	width: 100%
+
+.bigimg
+	column-width: 100
+
+.textimage
+	background: $backgroundnav 
+	color: $colortext
+	
+	// position: absolute
+
+
 
 // --------------------
 //Footer
 // --------------------
 #footer
+	display: flex
+	flex-direction: column
 	width: 100%
 	background: $backgroundnav
-	height: 150px
+	height: 160px
+
+	
+#footernav
+	width: 100%
+	padding-top: 15px
 
 #footerlogo
 	display: flex
-	justify-content: flex-end
-
-	padding-right: 20px
+	justify-content: flex-end      //puts logo to right
+	padding-top: 30px				//centers logo vertically
+	padding-right: 35px				//align-items didn´t work
 
 
 #footertext
 	display: flex
-	justify-content: center
-	align-items: flex-end
 	color: $colortext
-
+	width: 100%
+	justify-content: center 			//centers text vertically
+	padding-top: 20px					//align-items didn´t work
+	
+	
+	
+	
 
 
 
