@@ -4,34 +4,34 @@
 	<title>My second CodeReview</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="sytyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--  gives the browser instructions on how to control the page's dimensions and scaling, sets the width of the page to follow the screen-width of the device and sets the initial zoom level when the page is first loaded by the browser -->
 </head>
 <body>
-	<header>
+	<header>   <!-- header-section -->
 		<div class="headercontainer">
-				<img class="headerimage" src="img/logo-newspaper-cf.png" alt="CF Logo">
-				
+			<img class="headerimage" src="img/logo-newspaper-cf.png" alt="CF Logo">
 				<a class="banner" href="https://codefactory.wien/de/home/" title="Link to CodeFactory">
 					<img  src="img/banner-1.png" alt="Banner 1">
 				</a>	
 		</div>
 
-			<nav id="navheader">
-				<ul>
-					<li><a href="index.html" title="Home">Home</a></li>
-					<li><a href="tech.html" title="Tech">Tech</a></li>
-					<li><a href="culture.html" title="Culture">Culture</a></li>
-					<li><a href="video.html" title="Video">Video</a></li>
-					<li><a href="article.html" title="Aritcles">Article</a></li>
-				</ul>
-			</nav>	
+		<nav id="navheader">  <!-- nav-bar -->
+			<ul>
+				<li><a href="index.html" title="Home">Home</a></li>
+				<li><a href="tech.html" title="Tech">Tech</a></li>
+				<li><a href="culture.html" title="Culture">Culture</a></li>
+				<li><a href="video.html" title="Video">Video</a></li>
+				<li><a href="article.html" title="Aritcles">Article</a></li>
+			</ul>
+		</nav>	
 	</header>
 
-	<main>
+	<main>  							<!-- main part  -->
 		<div id="wrapper">
 			<p id="date">Friday, 14.09.2018</p>
 			<p id="mainheadingtop">Top news</p>
 					
-			<div class="smallimg">	
+			<div class="smallimg">					<!-- first row of small pictures -->
 				<div class="containerText">
 					<a class="link" href="article.html" title="Link to Articlepage">
 						<img src="img/nasa.png" alt="Nasa" width= "100%">
@@ -64,7 +64,7 @@
 
 			<p id="mainheadingpop">Popular</p>
 
-			<div class="smallimg">
+			<div class="smallimg">    <!-- second row of small pictures -->
 				<div class="containerText">
 					<a class="link" href="article.html" title="Link to Articlepage">
 						<img src="img/polar.png" alt="Polar" width= "100%">
@@ -85,59 +85,58 @@
 						<div class="imgtextsnowden">Edward Snowden surveillance powers ruled unlawful</div>
 					</a>
 				</div>
+			</div>	
+
+		   <!-- centered banner -->
+			<div class="banner">
+				<a href="https://codefactory.wien/de/home/" title="Link to CodeFactory">
+					<img id="banner3" src="img/banner-3.png" alt="banner3">
+				</a>
 			</div>
-			
 
-			<center>
-				<div class="banner">
-					<a href="https://codefactory.wien/de/home/" title="Link to CodeFactory">
-						<img id="banner3" src="img/banner-3.png" alt="banner3">
-					</a>
-				</div>
-			</center>
-
-			<div id="big">
+			<div id="big">   <!-- first row of big pictures -->
 				<div class="bigimg">	
 					<div class="containerText1">
 						<a class="link" href="article.html" title="Link to Articlepage">
-							<img src="img/iphone.png" alt="Iphone" width= "100%">
+							<img src="img/iphone.png" alt="Iphone" width= "120%">
 							<div class="textimage">How to preorder the iPhone XS, XS Max, and XR</div>
 						</a>
 					</div>
 
 					<div class="containerText1">
 						<a class="link" href="article.html" title="Link to Articlepage">
-							<img src="img/smart.png" alt="Smart" width= "100%">
-							<div class="textimage">This smart power strip lets you individually control each outlet</div>
+							<img src="img/smart.png" alt="Smart" width= "125%">
+							<div class="textimage">This smart power strip lets you individually control <br>
+							each outlet</div>
 						</a>
 					</div>
 				</div>
 					
-				<div class="bigimg">
+				<div class="bigimg">   <!-- second row of big pictures -->
 					<div class="containerText1">
 						<a class="link" href="article.html" title="Link to Articlepage">
-							<img src="img/one.png" alt="One" width= "100%">
+							<img src="img/one.png" alt="One" width= "120%">
 							<div class="textimage">OnePlus announces super cheap USB-C earbuds</div>
 						</a>
 					</div>
 
 					<div class="containerText1">
 						<a class="link" href="article.html" title="Link to Articlepage">
-							<img src="img/phone.png" alt="Phone" width= "100%">
-							<div class="textimage">Spotify raises limit for offline downloads to 10,000 songs per device</div>
+							<img src="img/phone.png" alt="Phone" width= "120%">
+							<div class="textimage">Spotify raises limit for offline downloads to <br>10,000 songs per device</div>
 						</a>
 					</div>
 				</div>
-		</div>
-				<div id="weasel" class="banner" >
-					<a href="https://codefactory.wien/de/home/" title="Link to CodeFactory">
-						<img id="bannerCF" src="img/banner-4.png" alt="banner-4">
-					</a>
-				</div>
-		
+			</div>
+			<div id="weasel" class="banner" >
+				<a href="https://codefactory.wien/de/home/" title="Link to CodeFactory">
+					<img id="bannerCF" src="img/banner-4.png" alt="banner-4">
+				</a>
+			</div>
+		</div>	
 	</main>
 
-	<footer id="footer">
+	<footer id="footer">   <!--  footer -->
 		<nav id="footernav">
 			<ul>
 				<li><a href="index.html" title="Home">Home</a></li>
@@ -148,17 +147,13 @@
 			</ul>
 		</nav>
 	
-		<div id="footerlogo" >
+		<div id="footerlogo" >   <!-- newspaper log -->
 				<img  src="img/logo-newspaper-cf.png" alt="CF Logo">
 		</div>
 
-		<div id="footertext">
+		<div id="footertext">   <!-- my name at the bottom -->
 			<p>Katharina Hansi - CodeFactory 2018</p>
 		</div>
-	
-		
-
 	</footer>
-
 </body>
 </html>

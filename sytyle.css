@@ -109,31 +109,41 @@ nav a:hover {
   width: 105px; }
 
 #banner3 {
-  align-items: center;
   width: 70%;
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: 170px; }
 
 #bannerCF {
-  height: 540px; }
+  height: 762px;
+  width: 112px; }
+
+#weasel {
+  float: right;
+  height: 750px; }
 
 #big {
   column-count: 2;
-  display: inline-block; }
+  display: inline-block;
+  width: 90%;
+  margin-bottom: 20px; }
 
 .containerText1 {
-  width: 100%; }
+  width: 80%; }
 
 .textimage {
   background: #1a1a1a;
-  color: white; }
-
-#weasel {
-  display: flex; }
+  color: white;
+  font-size: 120%;
+  margin-bottom: 20px;
+  width: 120%; }
 
 .bigimg {
-  display: flex;
   flex-wrap: wrap; }
+
+.link {
+  text-decoration: none;
+  margin-bottom: 50px; }
 
 .articles {
   display: inline-block;
@@ -165,9 +175,6 @@ nav a:hover {
   background: lightcoral; }
 
 #paragraph1:hover {
-  padding: 50px;
-  margin: 10px;
-  text-shadow: 0 0 3px #d41d39;
   transform: skewY(20deg); }
 
 #paragraph2 {
