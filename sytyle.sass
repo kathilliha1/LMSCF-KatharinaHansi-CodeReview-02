@@ -4,12 +4,15 @@
 @media only screen and (max-width: 1280px) and (min-width:769px)
 	body
 		width: 100%
-		height: 200px
+		height: 400px
 
 @media only screen and (max-width: 768px) and (min-width:320px)
 	#wrapper
 		width: 100%
-		height: 200px
+		flex-wrap: wrap
+
+	.banner
+		display: none
 
 body 
 	font-family: "ZCOOL QingKe HuangYou"
@@ -80,6 +83,9 @@ nav
 	margin-bottom: 10px
 	font-size: 20px
 
+.link
+	color: $colortext			//makes text in images white again, after putting them into a link
+
 // --------------------
 // container - first & second line small pictures
 // --------------------
@@ -136,7 +142,7 @@ nav
 	width: 105px
 
 #banner3
-	align-items: center
+	align-items: center  //centers banner
 	width: 70%
 	margin-top: 20px
 	margin-bottom: 20px
@@ -151,21 +157,40 @@ nav
 #big
 	column-count: 3			//creates 3 columns
 	display: inline-block
-
 	
 .containerText1
 	width: 100%
-
-.bigimg
-	column-width: 100
 
 .textimage
 	background: $backgroundnav 
 	color: $colortext
 	
-	// position: absolute
+// --------------------
+//	Article.html
+// --------------------	
 
+.articles
+	display: inline-block
+	border: 1px solid $backgroundnav 
+	padding: 10px
+	margin: 10px
+	background-image: linear-gradient(#e94545, #d41d39, $backgroundnav)
+	color: $colortext
 
+#articlewrapper
+	column-count: 2
+	width: 80%
+	margin: 0 auto 				//centers columns
+	margin-top: 50px
+	margin-bottom: 50px
+
+// --------------------
+//	video.html/tech.html/culture.html
+// --------------------	
+
+#paragraph
+	padding: 10px
+	margin: 10px
 
 // --------------------
 //Footer
