@@ -8,17 +8,6 @@ html, body, img, ul, p {
   max-width: 1200px;
   margin: auto; }
 
-@media only screen and (max-width: 1280px) and (min-width: 769px) {
-  body {
-    width: 100%;
-    height: 400px; } }
-@media only screen and (max-width: 768px) and (min-width: 320px) {
-  #wrapper {
-    width: 100%;
-    flex-wrap: wrap; }
-
-  .banner {
-    display: none; } }
 body {
   font-family: "ZCOOL QingKe HuangYou";
   width: 100%; }
@@ -129,7 +118,7 @@ nav a:hover {
   height: 540px; }
 
 #big {
-  column-count: 3;
+  column-count: 2;
   display: inline-block; }
 
 .containerText1 {
@@ -138,6 +127,13 @@ nav a:hover {
 .textimage {
   background: #1a1a1a;
   color: white; }
+
+#weasel {
+  display: flex; }
+
+.bigimg {
+  display: flex;
+  flex-wrap: wrap; }
 
 .articles {
   display: inline-block;
@@ -155,8 +151,34 @@ nav a:hover {
   margin-bottom: 50px; }
 
 #paragraph {
-  padding: 10px;
-  margin: 10px; }
+  padding: 50px;
+  margin: 10px;
+  text-shadow: 0 0 3px #d41d39; }
+
+#firstline::first-line {
+  background: lightgreen; }
+
+#paragraph1 {
+  padding: 50px;
+  margin: 10px;
+  text-shadow: 0 0 3px #d41d39;
+  background: lightcoral; }
+
+#paragraph1:hover {
+  padding: 50px;
+  margin: 10px;
+  text-shadow: 0 0 3px #d41d39;
+  transform: skewY(20deg); }
+
+#paragraph2 {
+  padding: 50px;
+  margin: 10px;
+  text-shadow: 0 0 3px #d41d39;
+  transition: width 3s, height 3s, transform 3s;
+  background: radial-gradient(red, yellow); }
+
+#paragraph2:hover {
+  transform: rotateX(90deg); }
 
 #footer {
   display: flex;
@@ -181,5 +203,20 @@ nav a:hover {
   width: 100%;
   justify-content: center;
   padding-top: 20px; }
+
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+  * {
+    width: 100%; } }
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  #wrapper {
+    width: 100%;
+    flex-wrap: wrap; } }
+@media only screen and (max-width: 479px) and (min-width: 320px) {
+  #wrapper {
+    width: 100%;
+    flex-wrap: wrap; }
+
+  .banner {
+    display: none; } }
 
 /*# sourceMappingURL=sytyle.css.map */
